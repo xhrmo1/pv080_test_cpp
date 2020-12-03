@@ -115,7 +115,7 @@ void demoDataTypeOverflow(int totalItemsCount, some_structure* pItem, int itemPo
 	}
 	else {
 		printf("Out of bound assignment");
-		return;
+		//return;
 	}
 	free(data_copy);
 }

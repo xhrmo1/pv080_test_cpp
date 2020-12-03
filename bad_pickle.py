@@ -9,12 +9,19 @@ import cPickle
 
 # Input injection
 def transcode_file( filename):
+    """
+    do nothing
+    """
     command = 'ffmpeg -i "{source}" output_file.mpg'.format(source=filename)
     subprocess.call(command, shell=True)  # a bad idea!
 
 
 # Assert statements
-def foo(user):
+
+def secure(user):
+    """
+    do nothing
+    """
     assert user.is_admin, 'user does not have access'
     # secure code...
 
