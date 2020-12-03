@@ -6,15 +6,13 @@ import subprocess
 import cPickle
 
 
-
 # Input injection
-def transcode_file( filename):
+def transcode_file(filename):
     """
     do nothing
     """
     command = 'ffmpeg -i "{source}" output_file.mpg'.format(source=filename)
     subprocess.call(command, shell=True)  # a bad idea!
-
 
 
 # Assert statements
@@ -25,7 +23,6 @@ def secure(user):
     """
     assert user.is_admin, 'user does not have access'
     # secure code...
-
 
 
 # Pickles

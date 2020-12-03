@@ -73,6 +73,7 @@ void demoAdjacentMemoryOverflow(char* userName, char* password) {
 	char realPassword[] = "very secret password nbusr123";
 	char buf[8];
 
+
 	// print some info about variables
 	printf("%-20s: %p\n", "message", message);
 	printf("%-20s: %p\n", "userName", userName);
